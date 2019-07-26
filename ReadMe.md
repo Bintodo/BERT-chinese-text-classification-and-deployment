@@ -30,21 +30,21 @@
    
        def get_test_examples(self, data_dir):
            return self.create_examples(
-               self._read_tsv(os.path.join(data_dir, "test.tsv")), "test")
+               self._read_tsv(os.path.join(data_dir, "test.csv")), "test")
    
        def get_train_examples(self, data_dir):
            """See base class."""
            return self.create_examples(
-               self._read_tsv(os.path.join(data_dir, "train.tsv")), "train")
+               self._read_tsv(os.path.join(data_dir, "train_small.csv")), "train")
    
        def get_dev_examples(self, data_dir):
            """See base class."""
            return self.create_examples(
-               self._read_tsv(os.path.join(data_dir, "dev.tsv")), "dev")
+               self._read_tsv(os.path.join(data_dir, "dev.csv")), "dev")
    
        def get_pred_examples(self, data_dir):
            return self.create_examples(
-               self._read_tsv(os.path.join(data_dir, "pred.tsv")), "pred")
+               self._read_tsv(os.path.join(data_dir, "pred.csv")), "pred")
    
        def get_labels(self):
            """See base class."""
