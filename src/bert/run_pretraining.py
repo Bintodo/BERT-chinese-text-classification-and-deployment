@@ -40,7 +40,7 @@ flags.DEFINE_string(
 
 flags.DEFINE_string(
     "output_dir", None,
-    "The output directory where the model checkpoints will be written.")
+    "The output_03 directory where the model checkpoints will be written.")
 
 # Other parameters
 flags.DEFINE_string(
@@ -244,7 +244,7 @@ def get_masked_lm_output(bert_config, input_tensor, output_weights, positions,
     input_tensor = gather_indexes(input_tensor, positions)
 
     with tf.variable_scope("cls/predictions"):
-        # We apply one more non-linear transformation before the output layer.
+        # We apply one more non-linear transformation before the output_03 layer.
         # This matrix is not used after pre-training.
         with tf.variable_scope("transform"):
             input_tensor = tf.layers.dense(
@@ -255,8 +255,8 @@ def get_masked_lm_output(bert_config, input_tensor, output_weights, positions,
                     bert_config.initializer_range))
             input_tensor = modeling.layer_norm(input_tensor)
 
-        # The output weights are the same as the input embeddings, but there is
-        # an output-only bias for each token.
+        # The output_03 weights are the same as the input embeddings, but there is
+        # an output_03-only bias for each token.
         output_bias = tf.get_variable(
             "output_bias",
             shape=[bert_config.vocab_size],

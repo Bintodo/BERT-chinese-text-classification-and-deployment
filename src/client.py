@@ -116,7 +116,7 @@ class Client:
 
         result = dict(result.json())
 
-        output = [np.argmax(i) - 1 for i in result['output']]
+        output = [np.argmax(i) - 1 for i in result['output_03']]
         return output
 
 

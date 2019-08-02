@@ -251,7 +251,7 @@ class WordpieceTokenizer(object):
 
         For example:
           input = "unaffable"
-          output = ["un", "##aff", "##able"]
+          output_03 = ["un", "##aff", "##able"]
 
         Args:
           text: A single token or whitespace separated tokens. This should have

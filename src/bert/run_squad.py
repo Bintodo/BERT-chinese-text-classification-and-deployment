@@ -45,7 +45,7 @@ flags.DEFINE_string("vocab_file", None,
 
 flags.DEFINE_string(
     "output_dir", None,
-    "The output directory where the model checkpoints will be written.")
+    "The output_03 directory where the model checkpoints will be written.")
 
 # Other parameters
 flags.DEFINE_string("train_file", None,
@@ -108,7 +108,7 @@ flags.DEFINE_integer("iterations_per_loop", 1000,
 flags.DEFINE_integer(
     "n_best_size", 20,
     "The total number of n-best predictions to generate in the "
-    "nbest_predictions.json output file.")
+    "nbest_predictions.json output_03 file.")
 
 flags.DEFINE_integer(
     "max_answer_length", 30,

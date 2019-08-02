@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 export BERT_BASE_DIR=/home/zhangxingbin/workspace/bert_chainese/bert_model/chinese_L-12_H-768_A-12
 export GLUE_DIR=/home/zhangxingbin/workspace/bert_chainese/data
-export OUTPUT_DIR=/home/zhangxingbin/workspace/bert_chainese/output
+export OUTPUT_DIR=/home/zhangxingbin/workspace/bert_chainese/output_03
 
 python client.py \
   --data_dir=$GLUE_DIR \
